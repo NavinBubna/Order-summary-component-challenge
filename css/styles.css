@@ -1,3 +1,17 @@
+:root {
+  --color-primary1: hsl(225, 100%, 94%);
+  --color-primary2: hsl(245, 75%, 52%);
+  --color-secondary1: hsl(225, 100%, 98%);
+  --color-secondary2: hsl(224, 23%, 55%);
+  --color-secondary3: hsl(223, 47%, 23%);
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
 /* .attribution {
   font-size: 11px;
   text-align: center;
