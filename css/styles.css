@@ -6,11 +6,29 @@
   --color-secondary3: hsl(223, 47%, 23%);
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #e0e8ff;
-  background-image: url(../images/pattern-background-desktop.svg);
+  background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw 29vh;
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+}
+
+.card {
+  /* margin-top: 11vh; */
+  margin: 11vh 7vw;
+  overflow: hidden;
+  border-radius: 4vw;
+}
+
+.hero img {
+  /* overflow: hidden; */
+  width: 86vw;
+  /* height: 10vw; */
 }
 /* .attribution {
   font-size: 11px;
