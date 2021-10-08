@@ -1,9 +1,9 @@
 :root {
-  --color-primary1: hsl(225, 100%, 94%);
-  --color-primary2: hsl(245, 75%, 52%);
+  --color-background: hsl(225, 100%, 97%);
+  --color-primary: hsl(245, 75%, 52%);
   --color-secondary1: hsl(225, 100%, 98%);
-  --color-secondary2: hsl(224, 23%, 55%);
-  --color-secondary3: hsl(223, 47%, 23%);
+  --color-para: hsl(224, 23%, 55%);
+  --color-heading: hsl(223, 47%, 23%);
 }
 
 html {
@@ -14,26 +14,121 @@ body {
   background-color: #e0e8ff;
   background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100vw 29vh;
+  background-size: 100vw 19rem;
   font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
 }
 
-.card {
+main {
   /* margin-top: 11vh; */
-  margin: 11vh 7vw;
-  overflow: hidden;
-  border-radius: 4vw;
+  max-width: 330px;
+  margin: 11vh auto;
+  /* overflow: hidden; */
+  border-radius: 15px;
+  background-color: #ffffff;
+  /* box-shadow: 10px 10px; */
 }
 
-.hero img {
-  /* overflow: hidden; */
-  width: 86vw;
-  /* height: 10vw; */
+.hero {
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  height: 160px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-/* .attribution {
-  font-size: 11px;
+
+.heading {
   text-align: center;
+  margin: 3.5rem auto 2rem;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: var(--color-heading);
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
+
+.para {
+  text-align: center;
+  max-width: 244px;
+  margin: auto auto;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--color-para);
+}
+
+.plan--pay {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+}
+
+.plan {
+  display: flex;
+  background-color: var(--color-background);
+  width: 100%;
+  margin: 2.6rem auto;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.music--icon {
+  /* height: 60%; */
+  margin: 1.6rem auto;
+}
+
+.time {
+  font-weight: 900;
+  color: var(--color-heading);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-para);
+}
+
+.plan > a {
+  margin: auto;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.plan > a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  width: 100%;
+  font-weight: 900;
+  padding: 1.7rem;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment--btn {
+  background-color: var(--color-primary);
+  color: white;
+  letter-spacing: 0.1rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px grey;
+  /* margin: auto; */
+}
+button:hover {
+  transform: translate(0px, -5px);
+  cursor: pointer;
+}
+
+.cancel--btn {
+  background-color: transparent;
+  color: var(--color-para);
+  margin-bottom: 15px;
+}
