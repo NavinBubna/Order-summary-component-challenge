@@ -14,7 +14,7 @@ body {
   background-color: #e0e8ff;
   background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100vw 19rem;
+  background-size: 100vw 30vh;
   font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
 }
 
@@ -38,18 +38,18 @@ main {
 
 .heading {
   text-align: center;
-  margin: 3.5rem auto 2rem;
+  margin: 4rem auto 2rem;
   font-weight: 900;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   color: var(--color-heading);
 }
 
 .para {
   text-align: center;
-  max-width: 244px;
+  max-width: 270px;
   margin: auto auto;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   color: var(--color-para);
 }
@@ -65,15 +65,15 @@ main {
   display: flex;
   background-color: var(--color-background);
   width: 100%;
-  margin: 2.6rem auto;
+  margin: 3rem auto;
   border-radius: 15px;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .music--icon {
   /* height: 60%; */
-  margin: 1.6rem auto;
+  margin: 1.6rem 1.5rem 1.6rem 1.5vw;
 }
 
 .time {
@@ -81,6 +81,7 @@ main {
   color: var(--color-heading);
   font-size: 1.2rem;
   line-height: 1.8rem;
+  margin: 1.6rem 0.5vw 1.6rem 0;
 }
 
 .price {
@@ -98,6 +99,7 @@ main {
 
 .plan > a:hover {
   text-decoration: none;
+  opacity: 0.6;
 }
 
 button {
@@ -106,12 +108,14 @@ button {
   font-weight: 900;
   padding: 1.7rem;
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .action {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .payment--btn {
@@ -122,13 +126,44 @@ button {
   box-shadow: 0px 10px 30px grey;
   /* margin: auto; */
 }
-button:hover {
-  transform: translate(0px, -5px);
-  cursor: pointer;
+.payment--btn:hover {
+  /* transform: translate(0px, -5px); */
+  opacity: 0.7;
+  /* cursor: pointer; */
 }
 
 .cancel--btn {
+  /* align-items: center; */
   background-color: transparent;
+  max-width: 11.1rem;
   color: var(--color-para);
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.cancel--btn:hover {
+  /* cursor: pointer; */
+  color: var(--color-heading);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100vw 400px;
+  }
+
+  main {
+    max-width: 450px;
+  }
+
+  .hero {
+    height: 218px;
+  }
 }
